@@ -41,3 +41,23 @@ Used of Serverless Architecture
 - We can do endless things with lambda.
 
 ---------------------------------------------------------------------------------------------------------------------
+
+Practical Demo
+-
+- Go to lambda - Create function - Provide name - Select runtime
+- In advanced settings, enable function URL to get public IP to access application written in lambda function
+- In auth type, select "NONE" to allow access to anyone
+- Create function
+
+![image](https://github.com/user-attachments/assets/23610379-84db-4c5e-83b8-b9c22f06ce3d)
+
+- We can see function got created with 2 options :-  Add trigger and Add destination
+
+![image](https://github.com/user-attachments/assets/6af5bbbf-aa79-496a-aea7-5b6c22faed2e)
+
+  - As lambda functions are event driven, triggered by events
+  - Without option of trigger we need to manually write/run lambda function which kills idea of serverless architecture.
+
+![image](https://github.com/user-attachments/assets/e1f8cdf8-00ff-4f63-b46e-c85f8d61c688)
+
+  
