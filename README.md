@@ -59,5 +59,34 @@ Practical Demo
   - As lambda functions are event driven, triggered by events
   - Without option of trigger we need to manually write/run lambda function which kills idea of serverless architecture.
 
+- Below is the source code for lambda example
 
-  
+![image](https://github.com/user-attachments/assets/6072f1b8-ba33-4f52-a29c-d4f610b9afec)
+
+  - We can write any code here in lambda but the name of function has to be lambda handler. Even if we write more functions inside code, they will not br triggered automatically. They've to be triggered by lambda handler. We've to mention the new function inside lambda and invoke the same.
+  - First function gets called by lambda handler is lambda function
+  - We can also write our code anywhere and uplaod here.
+
+- To control the lambda function or we need to pass some arguments to it, we make use of env variables
+  - Go to Configurations - Env variables - Add
+  - So when the function gets called, we can take values from env variables and make their use to invoke function
+ 
+![image](https://github.com/user-attachments/assets/d73824c7-39c5-4298-93aa-51acb12250c5)
+
+- By default when we create lambda, role gets created for us.
+  - While creating new function, we can even make use of existing role (Change default execution role)
+  - We can also attach new permissions for roles
+
+![image](https://github.com/user-attachments/assets/1cdcfbfa-d474-42c3-a844-9d7860b27ca0)
+
+- If lambda function wants to put some info we can configure destination service for it
+
+![image](https://github.com/user-attachments/assets/406f6a5b-4eeb-40b9-a4ea-fd8771b46f24)
+
+- We also get function URL using which we can access the application. But for this we need to enable HTTP access
+
+![image](https://github.com/user-attachments/assets/db941e53-5a68-472e-82ba-a534760e52b0)
+
+  - If we've not enabled HTTP access, then lambda cannot be accessed from outside but any internal service can call it and lambda can perform required activity
+  - As devops engineer we dont need external access to function
+
