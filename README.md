@@ -50,6 +50,7 @@ Practical Demo
 - Create function
 
 ![image](https://github.com/user-attachments/assets/23610379-84db-4c5e-83b8-b9c22f06ce3d)
+![image](https://github.com/user-attachments/assets/e1f8cdf8-00ff-4f63-b46e-c85f8d61c688)
 
 - We can see function got created with 2 options :-  Add trigger and Add destination
 
@@ -58,6 +59,5 @@ Practical Demo
   - As lambda functions are event driven, triggered by events
   - Without option of trigger we need to manually write/run lambda function which kills idea of serverless architecture.
 
-![image](https://github.com/user-attachments/assets/e1f8cdf8-00ff-4f63-b46e-c85f8d61c688)
 
   
